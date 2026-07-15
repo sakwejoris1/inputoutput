@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class oddeven {
-
+public class multiple {
     public static void main(String[] args)
     {
         //create a Scanner to obtain input from the command window
@@ -9,22 +8,18 @@ public class oddeven {
 
         int number1; //first number to add
         int number2; //second number to add
-        int sum; //sum of number1 and number2
+        int multiple; //sum of number1 and number2
 
         System.out.println("Enter the first number ");
         number1 = input.nextInt();
 
-        if(number1 % 2 == 0)
-            System.out.println("number1 is even");
-        else
-            System.out.println("number1 is odd");
-
         System.out.println("Enter the second number ");
         number2 = input.nextInt();
-        if(number2 % 2 == 0)
-            System.out.println("number2 is even");
+
+        if(number1 % number2 == 0)
+            System.out.println("number1 is a multiple of number2");
         else
-            System.out.println("number2 is odd");
+            System.out.println("number1 is not a multiple of number 2");
 
     }// end method main
-}//end class Addition
+}
